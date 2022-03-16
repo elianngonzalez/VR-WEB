@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WEB-VR</title>
+    <link rel="stylesheet" href="#">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <a-scene background="color: white" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+
+        <a-entity>
+            <a-entity id="camera" far="300" fav="100" camera position="0 0 0" look-controls wasd-controls="fly: true;">
+            </a-entity>
+        </a-entity>
+        <!--a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
+
+        <a-entity position='0 1 -5' geometry="primitive: box" material="color: red"
+            animation__1="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500"
+            ;
+            animation__2="property: components.material.material.color; type: color; to: red; startEvents: mouseleave; dur: 500"
+            ;
+            animation__animation-jump="dur:  500;  from:  1 1 1 ;  property:  scale;  startEvents:  mouseenter;  pauseEvents:  ;  resumeEvents:  ;  to:   1.5 1.5 1.5 "
+            ;
+            animation__animation="dur:  1000;  from: 1.5 1.5 1.5  ; startEvents:  mouseleave; property:  scale ;  to:   1 1 1 ;">
+        </a-entity-->
+
+        <a-entity>
+            <a-box id="cajita" position="0 1 -5" color="red">
+                <a-animation attribute="scale" dur="8000" direction="alternate" from="1 1 1" to="2 2 2" easing="ease-out" repeat='indefinite' >
+                </a-animation>
+            </a-box>
+        </a-entity>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="grey"></a-plane>
+
+
+
+        </a-en>
+
+</body>
+
+</html>
